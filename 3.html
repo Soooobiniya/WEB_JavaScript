@@ -3,29 +3,16 @@
 <head>
     <title>Soobin's WEB1 - JavaScript</title>
     <meta charset="utf-8">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script> -->
+    <script src="color.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">Soobin's WEB</a></h1>
     <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
+        dayNightHandler(this);
     ">
-    <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    ">
-    <input id="night_day" type="button" value='night' onclick="
-    if(document.querySelector('#night_day').value === 'night') {
-        document.querySelector('#night_day').value = 'day';
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-    } else {
-        document.querySelector('#night_day').value = 'night';
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-    }
-    ">
+
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
